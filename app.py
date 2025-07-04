@@ -85,7 +85,8 @@ class VideoProcessor(VideoTransformerBase):
         return img
 
 st.markdown("<h3 style='text-align:center;'>Please choose a mode:</h3>", unsafe_allow_html=True)
-mode = st.radio("", ["Signup", "Login"], horizontal=True)
+mode = st.radio("Choose Mode", ["Signup", "Login"], horizontal=True, label_visibility="collapsed")
+
 
 # Start video
 webrtc_ctx = webrtc_streamer(
